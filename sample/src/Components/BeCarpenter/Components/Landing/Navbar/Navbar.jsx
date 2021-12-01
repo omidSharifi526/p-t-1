@@ -43,8 +43,8 @@ const Navbar = () => {
                         <Link onClick={handleClick} to='/help' activeClassName='active' className='mnav-links'>Help</Link>
                     </li>
                 </ul>
-                <div className='nav-icon' onClick={handleClick}>
-                    <img  src={click?close:menu} alt="" />
+                <div className='nav-icon'>
+                    <img  onClick={handleClick}  src={click?close:menu} alt="" />
 
                 </div>
 
