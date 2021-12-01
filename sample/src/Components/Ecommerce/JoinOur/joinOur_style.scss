@@ -1,0 +1,30 @@
+.joinOur-container{
+    margin-top: 30px;
+    width: 100%;
+    border-radius: 3px;
+    background-color: #FFD6DB;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .joinOur-content{
+        text-align: center;
+       
+        width: 60%;
+    }
+    input{
+        width: 90%;
+        padding: 15px;
+        margin: auto;
+    }
+    button{
+        color: red;
+        background: rgba(0, 0, 0, 0.678);
+        outline: 0;
+        border: 0;
+        padding:10px 20px;
+        margin-top: 10px;
+        border-radius: 5px;
+    }
+
+}

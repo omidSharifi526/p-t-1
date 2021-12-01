@@ -1,0 +1,40 @@
+.Fooetr-Container{
+    margin-top: 30px;
+    width: 100%;
+    
+    background-color:#242F51 ;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 40px 30px;
+    border-radius: 5px;
+
+    .footerCol{
+        width: 20%;
+        height: 90%;
+        border: 1px solid rgba(255, 255, 255, 0.014);
+        color: white;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-start;
+        p{
+            font-size: 12px;
+        }
+
+
+    }
+    .footer-privacy{
+        width: 100%;
+       color: white;
+       
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 12px;
+        margin-top: 20px;
+    }
+}
+

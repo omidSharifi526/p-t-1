@@ -1,0 +1,33 @@
+.soMedia-container{
+    width: 100%;
+    margin-top: 30px;
+  
+  
+    .head{
+        width: 50%;
+      
+        padding: 10px 00px;
+        margin: auto;
+        text-align: center;
+
+    }
+    .body{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 70%;
+        margin: auto;
+       
+
+    }
+    .body img{
+        width:200px ;
+        height: 250px;
+        margin: 10px 20px;
+        border-radius: 10px;
+        box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.158);
+
+
+    }
+}

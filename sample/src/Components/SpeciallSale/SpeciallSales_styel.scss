@@ -1,0 +1,42 @@
+.speciall-sales-container{
+    width: 75%;
+   
+    height: 450px;
+  
+    
+    margin: 50px auto;
+    
+ 
+
+    .speciall-sales-head{
+        width: 95%;
+        
+       
+        background-color: rgb(255, 255, 255);
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center ;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.027);
+       
+
+
+        p{
+           
+            margin-top: 10px;
+            height: 100%;
+            color: red;
+        }
+        h4{
+           
+            margin-left: 5px;
+            font-size: 0.99 rem;
+        }
+
+    }
+
+
+
+
+}

@@ -1,0 +1,27 @@
+.cart{
+    width: 250px;
+    text-align: center;
+   
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    img{
+        height: 250px;
+        border-radius: 5px;
+    }
+    h5{
+        font-weight: 900;
+        font-size: 15px;
+        color: rgb(13, 42, 95);
+        margin-top: 10px;
+
+    }
+    p{
+        color: crimson;
+        font-size: 12px;
+        font-weight: 600;
+
+
+    }
+
+}  
