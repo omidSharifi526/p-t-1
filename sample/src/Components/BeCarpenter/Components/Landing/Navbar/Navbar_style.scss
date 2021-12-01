@@ -1,0 +1,168 @@
+@font-face {
+    font-family: 'sp';
+    src: url('../../../Asset//fonts//PlayfairDisplay-VariableFont_wght.ttf');
+}
+
+*{
+    font-family: 'sp' !important ;
+}
+
+.mnavbar{
+    
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 20;
+    position: sticky;
+    top: 0;
+    font-size: 1.5rem;
+    background: transparent;
+    
+
+}
+.mnav-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    width: 100%;
+    max-width: 1500px;
+   
+    background: transparent;
+
+}
+.mnav-logo{
+    font-size: 2rem;
+    flex-grow: 1;
+    align-items: center;
+    color: aliceblue;
+    text-decoration: none;
+    cursor: pointer;
+  
+    text-align: end;
+    span{
+        color:  #2B3035;;
+        font-weight: bolder;
+    }
+    .marked{
+        color: #A4ABA3;
+        background: #2B3035;
+        padding:10px 3px 10px 10px ;
+        font-weight: 900;
+    }
+
+}
+.mnav-menu{
+    
+    /* height: 100px; */
+    display: flex;
+    list-style: none;
+    text-align: center;
+    /* margin-right: 2rem; */
+    flex-grow: 1;
+    
+    margin-left: 168px;
+    box-sizing: border-box;
+
+
+}
+.mnav-links{
+    color:  #2B3035;
+    padding: 0.5rem 1.5rem ;
+    text-decoration: none;
+    font-weight: 300;
+    font-size: 15px;
+  //  border-bottom: 1px solid rgb(255, 255, 255);
+}
+.mnav-item{
+    margin-right: 1rem;
+    line-height: 30px;
+    font-size: 12px;
+    
+}
+.mnav-item::after{
+    content: '';
+    height: 1px;
+    width: 0;
+    display: block;
+    background-color: transparent;
+    transition: width .7s ease,background-color 0.5s ease;
+
+}
+.mnav-item:hover:after{
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.445);
+   
+}
+.mnav-item .active{
+    
+    border-bottom: 1px solid black;
+}
+.nav-icon{
+display: none;
+    img{
+        width: 20px;
+        height: 20px;
+    }
+}
+
+
+
+
+
+@media screen and (max-width:960px) {
+    .nav-icon{
+        display:block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translate(-100%,60%);
+        font-size: 1.87rem;
+        cursor: pointer;
+        z-index: 50;
+     
+      
+    }
+    .mnav-menu{
+        display: flex;
+        flex-direction: column;
+        
+        justify-content: space-between;
+        
+       
+        border-top: 1px solid wheat;
+        position: absolute;
+    
+        opacity: 0;
+        background: #2B3035;
+        
+
+        
+    }
+    .mnav-menu.active{
+        background: #2B3035;
+        justify-content: flex-start;
+        right: 0;
+        top: 0;
+        opacity:1 ;
+        transition: all ease 0.5s ;
+        z-index: 1;
+        min-height: 500px;
+        width: 100%;
+       
+    }
+    .mnav-logo{
+        text-align: center;
+    }
+   
+    
+    .mnav-links{
+        padding: 1.5rem;
+        width: 100%;
+        display: table;
+        color: blanchedalmond;
+    }
+
+}
+
