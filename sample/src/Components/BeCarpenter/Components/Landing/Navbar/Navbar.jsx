@@ -25,22 +25,22 @@ const Navbar = () => {
                         <Link onClick={handleClick} to='/'  className='mnav-links'>Home</Link>
                     </li>
                     <li className='mnav-item' >
-                        <Link onClick={handleClick} to='/aboute' activeClassName='active' className='mnav-links'>Aboute</Link>
+                        <Link onClick={handleClick} to='/aboute' activeClassName='active' className='mnav-links'>Chairs</Link>
                         </li>
                     <li className='mnav-item'>
-                        <Link onClick={handleClick} to='/contact' activeClassName='active' className='mnav-links'>Contact</Link>
+                        <Link onClick={handleClick} to='/contact' activeClassName='active' className='mnav-links'>Tables</Link>
                         </li>
                     <li className='mnav-item'>
-                        <Link onClick={handleClick} to='/help' activeClassName='active' className='mnav-links'>Help</Link>
+                        <Link onClick={handleClick} to='' activeClassName='active' className='mnav-links'>Details</Link>
                     </li>
                     <li className='mnav-item'>
-                        <Link onClick={handleClick} to='/help' activeClassName='active' className='mnav-links'>Help</Link>
+                        <Link onClick={handleClick} to='' activeClassName='active' className='mnav-links'>Aboute us</Link>
                     </li>
                     <li className='mnav-item'>
-                        <Link onClick={handleClick} to='/help' activeClassName='active' className='mnav-links'>Help</Link>
+                        <Link onClick={handleClick} to='' activeClassName='active' className='mnav-links'>Contact</Link>
                     </li>
                     <li className='mnav-item'>
-                        <Link onClick={handleClick} to='/help' activeClassName='active' className='mnav-links'>Help</Link>
+                        <Link onClick={handleClick} to='' activeClassName='active' className='mnav-links'>Buy now</Link>
                     </li>
                 </ul>
                 <div className='nav-icon'>

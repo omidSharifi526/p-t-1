@@ -1,13 +1,10 @@
+
+
+
+
 .main-container{
 width: 100%;
-height: 670px;
-background-image: url('../../Asset//imgs/close.png') center center;
-background-size: cover;
-
-background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(0,0,0,0) 0%, rgba(15, 65, 75, 0.562) 100%);
-
-
-
+height: 800px;
 
 .main-navbar-container{
     width: 100%;
@@ -16,16 +13,14 @@ background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(0,0,0,0) 0%, rgba(15, 
     border: 1px solid rgb(0, 0, 0);
     background-color: transparent;
    
-    left: 10%;
+    
+}
+
+
 }
 
 
 
-
-
-
-
-}
 
 
 
@@ -36,14 +31,83 @@ background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(0,0,0,0) 0%, rgba(15, 
 .slider-container{
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 255, 0);
+    background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(0,0,0,0) 0%, rgba(15, 65, 75, 0.562) 100%);
     .slider{
         position: relative;
         width: 100%;
         height: 100%;
+      
+      
         img{
             width: 100%;
             height: 100%;
+            position: absolute;
         }
+
+
+
+        
+    .text-container{
+       
+        
+        position: absolute;
+        flex-direction: column;
+        justify-content: space-evenly;
+       
+        padding: 40px;
+        transition: all ease 0.5s;
+        user-select: none;
+      
+        h1{
+            font-size: 5rem;
+        }
+        p,button{
+            display: block;
+            margin: 50px 0;
+            font-size: large;
+            width: 50%;
+        }
+        button{
+            background-color: transparent;
+            padding: 10px 30px;
+            cursor: pointer;
+            transition: all ease 0.5s;
+            
+            &:hover{
+             background-color: black;
+             color: blanchedalmond;
+            
+            }
+        }
+        
+        p{
+            font-size: 35px;
+           
+        }
+       
+
+    }
+
+    .arrow-slider{
+        width: 150px;
+        height: 40px;
+        position: absolute;
+        right: 150px;
+        bottom: 400px;
+        cursor: pointer;
+
+    
+    }
+    }
+
+    
+
+}
+
+
+@media (max-width: 12450px) { 
+    .text-container{
+        top: 160px;
+        left: 150px;
     }
 }
