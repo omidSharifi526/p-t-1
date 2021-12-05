@@ -6,6 +6,7 @@ import MobileFooter from './Components/Footer/Mobile-Footer.jsx/MobileFooter'
 import Footer from './Components/Footer/Footer';
 import Ecommrce from './Components/Ecommerce/Ecommrce';
 import BeCarpenter from './Components/BeCarpenter';
+import MostPopular from './Components/BeCarpenter/Components/MostPopularProducts/MostPopular';
 
 
 const App = () => {
@@ -26,11 +27,13 @@ const App = () => {
 
    
   }, [activeMenu])
-  console.log(activeMenu);
+  
   return (
     <div  >
       
-      <BeCarpenter setMenuActive={setMenuActive}/>
+      {/* <BeCarpenter setMenuActive={setMenuActive}/> */}
+      <MostPopular/>
+
       
      
     </div>
