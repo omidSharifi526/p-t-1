@@ -1,17 +1,14 @@
 .container{
-   
     width: 100%;
-    min-height: 700px;
-  
-    
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: flex-start;
-    justify-content: center;
+    justify-content: start;
 
     .text-container{
-        margin-top: 25px;
+        
+      
         
         max-width: 300px;
        
@@ -54,12 +51,11 @@
     }
 
     .product-container{
-        width: 700px;
-        
-      
-        background-color: snow;
+        max-width: 850px;
         display: flex;
-
+        
+       
+        flex-grow: 1;
         flex-wrap: wrap;
 
     }
@@ -76,12 +72,15 @@
         
     }
     .text-container{
-       
+        padding-left: 100px;
       
         width: 100%;
+      
+        flex-grow: 1;
+       
        
      
-        padding-left: 40px;
+       
         
     
      
@@ -90,23 +89,28 @@
 }
 @media only screen and (min-width: 600px) {
     .container{
-        justify-content: stretch;
+        justify-content: flex-start;
+       
+
     }
 
 
     .product-container{
         padding: 5px 40px;
         flex-grow: 1;
+        padding-left: 100px;
+        background-color: transparent;
        
         
     }
     .text-container{
        
-        flex-grow: 1;
-        width: 100%;
        
+        width: 100%;
      
-        padding-left: 100px;
+        padding-top: 50px;
+        margin-left: 100px;
+        
         
     
      

@@ -1,0 +1,58 @@
+.main-card{
+width: 100%;
+
+display: flex;
+justify-content: space-around;
+align-items: center;
+
+.image-area{
+    width: 20%;
+    height: 100%;
+ 
+    img{
+     width: 300px;
+     height: 300px;
+    }
+}
+.details-area{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background: chocolate;
+
+
+.price-buy{
+    background: cornflowerblue;
+
+    .prices{
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+        .newprice{
+            font-size: 1rem;
+
+        }
+        .oldprice{
+            font-size: 1rem;
+            text-decoration: line-through;
+
+        }
+
+    }
+
+
+    button{
+        background: chartreuse;
+        padding: 2px 30px;
+    }
+}
+
+
+   
+    
+
+}
+
+
+}

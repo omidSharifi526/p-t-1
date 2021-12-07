@@ -40,10 +40,7 @@ const sliderContent = [
 const slider = SwiperCore.use([Pagination, EffectFade, Autoplay, Navigation])
 
 const Swiperslider = () => {
-
-  useEffect(() => {
-    
-  }) 
+ 
 
   const [active, setActive] = useState(1)
 
@@ -59,15 +56,15 @@ const Swiperslider = () => {
   }
 
 
-  console.log(active , '##');
+
 
   return (
     <div className='slider-container' >
       <Swiper
-        onAny={() => console.log('sd')}
+       
         effect="fade"
         modules={[Navigation, Pagination, Scrollbar, A11y, EffectFade, Navigation]}
-        // autoplay
+        autoplay
         loop={true} 
         navigation
         spaceBetween={20}
@@ -80,9 +77,9 @@ const Swiperslider = () => {
       >
         {sliderContent.map((item, index) => 
           <SwiperSlide>
-            <div className={`image-container ${active === (index) && 'active'}`}>
+            <div className={`image-container'}`}>
               <img className='slide-img' src={item.image} alt="" />
-              <div className='text-content'>
+              <div className={`text-content  ${active === (index) && 'active'} `}>
                 <h1>{item.title}</h1>
                 <p>{item.description}</p>
                 <button>{item.action}</button>

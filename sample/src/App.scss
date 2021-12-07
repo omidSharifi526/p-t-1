@@ -1,10 +1,21 @@
 
+@font-face {
+    font-family: 'is';
+    src: url('../src/asset/Fonts/IRANSans.ttf');
+}
+
+
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     transition: 0.75s left ease;
   
+}
+
+body{
+font-family: 'is';
 }
 
 

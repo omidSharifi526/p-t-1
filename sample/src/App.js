@@ -7,16 +7,15 @@ import Footer from './Components/Footer/Footer';
 import Ecommrce from './Components/Ecommerce/Ecommrce';
 import BeCarpenter from './Components/BeCarpenter';
 import MostPopular from './Components/BeCarpenter/Components/MostPopularProducts/MostPopular';
+import ExcitingDiscount from './Components/ExcitingDiscount/ExcitingDiscount';
 
 
 const App = () => {
 
   const [activeMenu,setMenuActive]=useState(true);
+  
   useEffect(() => {
-    
-  }, [])
-  useEffect(() => {
-    if(!activeMenu) {
+    if(!activeMenu && window.innerWidth<=960) {
       document.querySelector('body').style.position='relative';
       document.querySelector('body').style.left='-200px';
      
@@ -29,10 +28,12 @@ const App = () => {
   }, [activeMenu])
   
   return (
-    <div  >
+    <div>
       
-      {/* <BeCarpenter setMenuActive={setMenuActive}/> */}
-      <MostPopular/>
+      {/* <BeCarpenter setMenuActive={setMenuActive}/>
+      <MostPopular/> */}
+   <ExcitingDiscount/>
+
 
       
      
