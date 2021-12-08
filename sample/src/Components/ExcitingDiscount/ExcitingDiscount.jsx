@@ -1,7 +1,7 @@
-import React, {useState} from 'react';
+import React, {useState,useEffect} from 'react';
 import './exciting-discount-style.scss';
 import SwiperCore, {
-    Navigation,Thumbs
+    Navigation,Thumbs,Pagination
   } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/swiper-bundle.min.css'
@@ -15,10 +15,36 @@ import OfferCard from './OfferCard/OfferCard';
 
 
 // install Swiper modules
-SwiperCore.use([Navigation,Thumbs]);
+SwiperCore.use([Pagination,Navigation,Thumbs]);
 
 
 const ExcitingDiscount = () => {
+    var [date,setDate] = useState(new Date());
+    let[newtime,setnewtime]=useState(null)
+  
+    
+
+    useEffect(() => {
+        var timer = setInterval(()=>setDate(new Date()), 1000 )
+        var timer2=setInterval(()=>{setnewtime(new Date().toLocaleTimeString())},2000)
+        let now=new Date()
+        console.log('usse effect is run');
+        console.log(now.toLocaleTimeString());
+        return function cleanup() {
+            clearInterval(timer)
+            clearInterval(timer)
+        }
+    
+    },[date]);
+
+
+
+
+
+   
+    
+
+
 
 
     const [thumbsSwiper, setThumbsSwiper] = useState(null);
@@ -34,11 +60,11 @@ const ExcitingDiscount = () => {
             </div>
            <div className='count-down-area'>
                <div className='countdown-label'>
-                   <span>---------زمان باقی مانده--------</span>
+                   <span>زمان باقی مانده</span>
 
                </div>
                <span className='countdown-wrap'>
-                   15:17:55
+                   {date.toLocaleTimeString()}
                </span>
            </div>
 
@@ -48,63 +74,41 @@ const ExcitingDiscount = () => {
 
 
         
-            <Swiper style={{'--swiper-navigation-color': '#fff','--swiper-pagination-color': '#fff'}} spaceBetween={10} thumbs={{ swiper: thumbsSwiper }} className="mySwiper2">
+          
+          <Swiper style={{'--swiper-navigation-color': '#fff','--swiper-pagination-color': 'blue'}} pagination={window.innerWidth < 600 && true} spaceBetween={10} thumbs={{ swiper: thumbsSwiper }} className="mySwiper2">
                
-        {
-            data.map((item,index)=>{
-                
-                return(< div key={index}>
-                <SwiperSlide key={index} className='ms'><OfferCard item={item}/></SwiperSlide>
-                </div>)
-
-                
-
-            })
-        }
-               
-            </Swiper>
+               {
+                   data.map((item,index)=>{
+                       
+                       return(< div key={index}>
+                       <SwiperSlide key={index} className='ms'><OfferCard item={item}/></SwiperSlide>
+                       </div>)
+       
+                       
+       
+                   })
+               }
+                      
+                   </Swiper>
+          
             
             <Swiper  onSwiper={setThumbsSwiper} spaceBetween={0} slidesPerView={5} freeMode={true} navigation={true} watchSlidesProgress={true} className="mySwiper">
                
-            {
-            data.map((item,index)=>{
-                
-                return(< div key={index}>
-                <SwiperSlide key={index} >{item.title}</SwiperSlide>
-                </div>)
+               {
+               data.map((item,index)=>{
+                   
+                   return(< div key={index}>
+                   <SwiperSlide key={index} >{item.title}</SwiperSlide>
+                   </div>)
+   
+                   
+   
+               })
+           }           
+           
+            </Swiper>
+           
 
-                
-
-            })
-        }            </Swiper>
-
-{/* 
-
-        <Swiper
-         modules={[Navigation, Pagination, Scrollbar, A11y]}
-         navigation
-         pagination={{ clickable: true }}
-         spaceBetween={1}
-         slidesPerView={1}
-         onSlideChange={() => console.log('slide change')}
-         onSwiper={(swiper) => console.log(swiper)}
-      
-    >
-        {
-            data.map((item,index)=>{
-                
-                return(< div key={index}>
-                <SwiperSlide key={index} className='ms'><OfferCard item={item}/></SwiperSlide>
-                </div>)
-
-                
-
-            })
-        }
-    </Swiper> */}
-
-
-            
 
         </div>
            

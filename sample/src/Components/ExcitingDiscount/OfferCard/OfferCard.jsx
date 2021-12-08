@@ -1,12 +1,13 @@
 import React from 'react';
-import './offer-card-style.scss'
+import './offer-card-style.scss';
+import shopicn from './asset/imgs/shopping-icon.svg'
 
 const OfferCard = ({item}) => {
   //  console.log(item,'hiiii');
     return (
         <div className='main-card'>
             <div className='image-area'>
-                <img src={item.img} alt="" />
+                <img className='card-images' src={item.img} alt="" />
             </div>
             <div className='details-area'>
                 <h5>{item.title}</h5>
@@ -19,12 +20,12 @@ const OfferCard = ({item}) => {
 
                     })}
                 </ul>
-                <div className='price-buy'>
+                <div id="price-buy" className='price-buy'>
                   <div className='prices'> 
-                    <p className='newprice'>قیمت:{item.price}</p>
-                    <span className='oldprice'>{item.oldprice} </span>
+                    <p id='newprice' className='newprice'>قیمت: <span> {item.price}تومان</span></p>
+                    <span id='oldprice' className='oldprice'>{item.oldprice}تومان </span>
                 </div>
-                    <button>مشاهده و خرید</button>
+                    <button id='btn' className='buy-btn'> <img className='buy-icon' src={shopicn} alt="" /> مشاهده و خرید  </button>
                 </div>
 
 

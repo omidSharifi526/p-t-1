@@ -1,58 +1,183 @@
 .main-card{
-width: 100%;
-
-display: flex;
-justify-content: space-around;
-align-items: center;
-
-.image-area{
-    width: 20%;
-    height: 100%;
- 
-    img{
-     width: 300px;
-     height: 300px;
-    }
-}
-.details-area{
-    width: 40%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    background: chocolate;
-
-
-.price-buy{
-    background: cornflowerblue;
-
-    .prices{
-        display: flex;
-        width: 100%;
-        justify-content: space-around;
-        .newprice{
-            font-size: 1rem;
-
-        }
-        .oldprice{
-            font-size: 1rem;
-            text-decoration: line-through;
-
-        }
-
-    }
-
-
-    button{
-        background: chartreuse;
-        padding: 2px 30px;
-    }
-}
-
-
-   
+    width: 100%;
     
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    flex-wrap: wrap;
+   
+    .image-area{
+        width: 30%;
+        height: 100%;
+        display: flex;
+        align-self: center;
+      justify-content: center;
+      flex-grow: 1;
+      
+       
+     
+        img{
+        width:30%;
+        height: 50%;
+      
+        
+        }
+    }
+    @media only screen and (max-width: 600px) {
+        .image-area{
+            padding: 5px;
+            img{
+                width: 150px;
+                height: 200px;
+            }
+        }
 
-}
+
+    }
 
 
-}
+    
+    .details-area{
+        width: 40%;
+        background-color: rgb(255, 255, 255);
+        /* height: 87%; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-grow: 1;
+        
+        
+        h5{
+            font-size: 1.20rem;
+            font-weight: 900;
+            text-align: right;
+            padding: 5px;
+    
+        }
+        p{
+            font-size: 1rem;
+            color: gray;
+            text-align: right;
+            padding-bottom: 10px;
+    
+        }
+        ul{
+           
+            text-align: right;
+            font-weight: 600;
+            color: rgb(100, 93, 93);
+           margin-bottom: 40px;
+            li{
+                padding: 3px 0;
+                font-size: 0.75rem;
+                margin: 5px 0;
+            }
+    
+        }
+    
+        
+    
+    
+    .price-buy{
+        width: 60%;
+       display: flex;
+       flex-direction: column;
+      
+    
+        .prices{
+           
+            display: flex;
+            width: 100%;
+            justify-content: space-around;
+            align-items: center;
+            .newprice{
+                font-size: 1rem;
+                span{
+                    font-size:1.5rem ;
+                    font-weight: 900;
+                }
+    
+            }
+            .oldprice{
+                font-size: 1rem;
+                text-decoration: line-through;
+    
+            }
+    
+        }
+    
+    
+        button{
+            background: chartreuse;
+            
+            padding: 2px 40px;
+            align-self:stretch ;
+            padding: 5px;
+            display: flex;
+            justify-content: space-around;
+            border: 0;
+            font-size: 1.1rem;
+
+            cursor: pointer;
+            border-radius: 5px;
+           
+
+
+            img{
+               direction: ltr;
+               transform: scaleX(-1);
+               width: 1.2rem;
+               margin-top: 5px;
+               background-color: chartreuse;
+              
+            }
+            
+           
+            
+        }
+    }
+    
+    
+       
+        
+    
+    }
+    
+    
+    }
+    
+    
+    @media only screen and (max-width: 600px) {
+        .main-card{
+            width: 100%;
+    
+        }
+        
+      }
+      @media only screen and (max-width: 600px) {
+          
+        #btn{
+            flex-grow: 1;
+            align-self: stretch;
+            background-color: rgb(255, 255, 0);
+            font-size: 0.95rem;
+        }
+        #price-buy{
+            width: 100%;
+        }
+        #newprice{
+            font-size: 0.75rem;
+
+            span{
+                font-size:0.75rem ;
+                font-weight: 900;
+            }
+
+        }
+        #oldprice{
+            font-size: 0.75rem;
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+      }
+     

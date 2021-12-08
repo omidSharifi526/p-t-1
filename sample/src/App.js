@@ -32,7 +32,14 @@ const App = () => {
       
       {/* <BeCarpenter setMenuActive={setMenuActive}/>
       <MostPopular/> */}
-   <ExcitingDiscount/>
+      <div className='container'>
+        <div className='blank-space'>
+
+        </div>
+        <div className='content'>
+          <ExcitingDiscount/>
+        </div>
+      </div>
 
 
       
