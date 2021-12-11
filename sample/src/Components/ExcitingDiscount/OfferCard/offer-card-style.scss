@@ -5,6 +5,8 @@
     justify-content: end;
     align-items: center;
     flex-wrap: wrap;
+  
+   
    
     .image-area{
         width: 30%;
@@ -13,12 +15,13 @@
         align-self: center;
       justify-content: center;
       flex-grow: 1;
+     
       
        
      
         img{
-        width:30%;
-        height: 50%;
+        width:100%;
+        height: 80%;
       
         
         }
@@ -28,9 +31,26 @@
             padding: 5px;
             img{
                 width: 150px;
-                height: 200px;
+                height: 150px;
+                object-fit: fill;
             }
         }
+        .main-card{
+             margin-bottom: 50px;
+        }
+
+
+    }
+    @media only screen and (min-width: 600px) {
+        .image-area{
+           
+            img{
+                width: 350px;
+                height: 250px;
+                object-fit: fill;
+            }
+        }
+      
 
 
     }
@@ -43,22 +63,25 @@
         /* height: 87%; */
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: flex-start;
         flex-grow: 1;
         
         
         h5{
-            font-size: 1.20rem;
-            font-weight: 900;
+            font-size: 18px;
+            font-weight: 500;
             text-align: right;
             padding: 5px;
     
         }
-        p{
+        p.engtitle{
+            display: block;
+            width: 50%;
             font-size: 1rem;
             color: gray;
-            text-align: right;
-            padding-bottom: 10px;
+            text-align: left;
+           
+          
     
         }
         ul{
@@ -66,14 +89,36 @@
             text-align: right;
             font-weight: 600;
             color: rgb(100, 93, 93);
-           margin-bottom: 40px;
+            
+            
+          
             li{
-                padding: 3px 0;
+                
                 font-size: 0.75rem;
                 margin: 5px 0;
+                list-style: none;
+                margin-top: 3px;
+                
+
+                &::before {
+                    background-color: #1f7da8;
+                    border-radius: 7px;
+                    content: "";
+                    display:inline-block;
+                    height: 7px;
+                    width: 7px;
+                    margin-left: 10px;
+                    
+                }
+             
+               
             }
+
+            
+           
     
         }
+           
     
         
     
@@ -88,10 +133,12 @@
            
             display: flex;
             width: 100%;
-            justify-content: space-around;
+            justify-content: space-between;
             align-items: center;
+            padding-left: 10px;
             .newprice{
                 font-size: 1rem;
+                color: black;
                 span{
                     font-size:1.5rem ;
                     font-weight: 900;
@@ -110,25 +157,28 @@
         button{
             background: chartreuse;
             
-            padding: 2px 40px;
+            padding: 1px 40px;
             align-self:stretch ;
-            padding: 5px;
+            padding: 5px 30px;
             display: flex;
-            justify-content: space-around;
+            justify-content: start;
             border: 0;
             font-size: 1.1rem;
 
             cursor: pointer;
             border-radius: 5px;
+            span{
+                flex-grow: 1;
+            }
            
 
 
             img{
-               direction: ltr;
+         
                transform: scaleX(-1);
                width: 1.2rem;
                margin-top: 5px;
-               background-color: chartreuse;
+               
               
             }
             
@@ -178,6 +228,7 @@
             font-size: 0.75rem;
             font-weight: 600;
             margin-bottom: 5px;
+            
         }
       }
      

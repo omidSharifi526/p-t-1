@@ -1,15 +1,19 @@
 import React, {useState,useEffect} from 'react';
 import './exciting-discount-style.scss';
+
+
 import SwiperCore, {
     Navigation,Thumbs,Pagination
   } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/swiper-bundle.min.css'
 import 'swiper/swiper.min.css';
+import Countdown from 'react-countdown';
 
 
 import {data} from './OfferCard/asset/data'
 import OfferCard from './OfferCard/OfferCard';
+
 
 
 
@@ -19,40 +23,15 @@ SwiperCore.use([Pagination,Navigation,Thumbs]);
 
 
 const ExcitingDiscount = () => {
-    var [date,setDate] = useState(new Date());
-    let[newtime,setnewtime]=useState(null)
-  
     
-
-    useEffect(() => {
-        var timer = setInterval(()=>setDate(new Date()), 1000 )
-        var timer2=setInterval(()=>{setnewtime(new Date().toLocaleTimeString())},2000)
-        let now=new Date()
-        console.log('usse effect is run');
-        console.log(now.toLocaleTimeString());
-        return function cleanup() {
-            clearInterval(timer)
-            clearInterval(timer)
-        }
-    
-    },[date]);
-
-
-
-
-
-   
-    
-
-
-
-
     const [thumbsSwiper, setThumbsSwiper] = useState(null);
 
  
     return (
-        <div className='main-container'> 
-        <div className='header-area'>
+       
+        <div  className='main-container'> 
+         
+        <div id='header-area' className='header-area'>
             <div className='header-title'>
                 <h5>تخفیف های هیجان انگیز</h5>
                
@@ -64,7 +43,7 @@ const ExcitingDiscount = () => {
 
                </div>
                <span className='countdown-wrap'>
-                   {date.toLocaleTimeString()}
+               <Countdown daysInHours={true}    date={Date.now()+500000}/>
                </span>
            </div>
 

@@ -17,25 +17,28 @@
 
 
 .container {
-    
-    display: flex;
-    align-items: center;
+  
+   
   
 
-    .blank-space {
-        width: 15%;
-      
-        margin: 8px;
-        border-radius: 12px;
-    }
-
+   
     .content {
-        
-        width: 85%;
-       
-        height: 50%;
+        width: 80%;
+    
     }
 }
+
+@media screen and (max-width:600px) {
+   
+        #content{
+            width: 100%;
+            
+           
+           
+        }
+    
+}
+
     
 
 
