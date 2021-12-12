@@ -1,6 +1,7 @@
 import React,{useState} from 'react';
 import closeImg from '../../Asset/imgs/close.svg';
 import plus from '../../Asset/imgs/plus.svg';
+import FilterCategoryBtn from './FilterCategoryBtn/FilterCategoryBtn';
 
 
 import './categoriesmanager_style.scss';
@@ -21,7 +22,8 @@ const CategoriesManager = ({titleCastegory}) => {
 
             </div>
             <div className={`body-area  ${state?"active":"notactive"}`} >
-               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, temporibus.</p>
+              
+             
 
             </div>
         </div>
