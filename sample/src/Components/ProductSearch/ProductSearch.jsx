@@ -6,16 +6,33 @@ import closeicn from './Asset/imgs/close.svg';
 import FilterCategoryBtn from './Components/CategoriesManager/FilterCategoryBtn/FilterCategoryBtn';
 
 
-const ProductSearch = () => {
+import {cardData} from '../ProductSearch/Asset/data/data'
+import Card from './Components/Cards/Card';
 
-    const[showmmenu,setshowmmenu]=useState(true)
+const ProductSearch = () => {
+    console.log(cardData);
+
+    const[showmmenu,setshowmmenu]=useState(false)
 
     return (
-        <main  className='main-container'>
-          <section className='product-result'>
-              
+        <main >
+          <section id='product-result' className='product-result'>
+             
+             {
+                 cardData.map((data)=>{
+                     return(
+                         <div>
+                             <Card data={data}/>
+
+                         </div>
+                     )
+                 })
+
+             }
 
           </section>
+
+
           <section className='sidebar'>
               <CategoriesManager titleCastegory={'دسته بندی'}/>
             
@@ -30,7 +47,7 @@ const ProductSearch = () => {
           </section>
 
           
-
+{/* craete icon filter menu for mobile device */}
           <div id='mobile-menu-filter' className='mobile-menu-filter' >
 
            <div className='icn-mobile-menu' onClick={()=>{
@@ -41,9 +58,10 @@ const ProductSearch = () => {
            </div>
            
           </div>
+{/* craete icon filter menu for mobile device */}
 
 
-
+{/* craete main menu filter  for mobile device */}
           <div id='main-menu-container' className={`main-menu-container ${showmmenu?'main-menu-active':'main-menu-not-active'}`}>
               <div className='main-menu-header' onClick={()=>{setshowmmenu(false)}}>
                   <span>فیلترها</span>
