@@ -24,4 +24,6 @@ export const cardData=[
     {title:'Redragon S101 PC Gaming Keyboard',img:img8,rate:35058,price:39.99,off:4.4,newprice:34.99},
     {title:'Redragon S101 PC Gaming Keyboard',img:img9,rate:35058,price:39.99,off:4.4,newprice:34.99},
     {title:'Redragon S101 PC Gaming Keyboard',img:img10,rate:35058,price:39.99,off:4.4,newprice:34.99},
+    {title:'Redragon S101 PC Gaming Keyboard',img:img6,rate:35058,price:39.99,off:4.4,newprice:34.99},
+    {title:'Redragon S101 PC Gaming Keyboard',img:img7,rate:35058,price:39.99,off:4.4,newprice:34.99}
 ]

@@ -6,9 +6,9 @@ import FilterCategoryBtn from './FilterCategoryBtn/FilterCategoryBtn';
 
 import './categoriesmanager_style.scss';
 
-const CategoriesManager = ({titleCastegory}) => {
+const CategoriesManager = ({titleCastegory,data}) => {
 
-    const[state,setstate]=useState(false)
+    const[state,setstate]=useState(true)
 
 
     return (
@@ -22,8 +22,8 @@ const CategoriesManager = ({titleCastegory}) => {
 
             </div>
             <div className={`body-area  ${state?"active":"notactive"}`} >
-              
-             
+                
+            {data}
 
             </div>
         </div>

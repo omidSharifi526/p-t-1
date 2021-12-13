@@ -17,31 +17,39 @@
 
 main{
     width: 100%;
-    height: 500px;
+    
     display: flex;
-    background-color: rgb(90, 90, 90);
+    background-color: rgb(255, 255, 255);
     
   
 
     section.product-result{
       
-        width: 80%;
-        min-height: 800px;
-        background-color: rgb(236, 236, 236);
+        width: 85%;
+        padding: 5px 5px;
+        
+    
         flex-grow: 1;
         display: flex;
+        justify-content: space-between;
+
+        align-items: flex-start;
+        align-content: flex-start;
         flex-flow: wrap row;
+        
+       
 
 
 
     }
     section.sidebar{
-        width:18%;
-        height: 500px;
-        
-        min-width: 300px;
+        width:10%;
+        border: 1px solid rgba(0, 0, 0, 0.185);
+        flex-grow: 0;
+        min-width: 250px;
         direction: rtl;
-        background-color: red;
+       // background-color: red;
+       
 
     }
     .mobile-menu-filter{
@@ -86,6 +94,7 @@ main{
             display: flex;
             justify-content: space-between;
             padding: 10px;
+           
             img{
                 width: 15px;
                 height: 15px;
@@ -102,24 +111,25 @@ main{
 
         .category-content{
             width: 100%;
-            padding: 0px 0px;
+            padding: 0px 5px;
           
           
             display: flex;
             flex-direction: column;
-            padding-bottom: 0px;
-            background-color: rgb(151, 151, 151);
+            
+         
             
 
             .category-head{
                 direction: rtl;
                 width: 100%;
-               
-             
+                padding-top: 20px;
+                background: rgb(255, 255, 255);
                 display: flex;
                 flex-direction: row;
                 font-weight: 500;
                 line-height: 1.2;
+               
 
 
             }
@@ -131,7 +141,7 @@ main{
                 flex-wrap: wrap;
                 overflow: auto;
                 
-                background-color: rgb(151, 151, 151);
+                background-color: rgb(255, 255, 255);
 
 
             }
@@ -179,16 +189,22 @@ main{
      position: fixed;
     }
     #product-result{
-        width: 100%;
-        background-color: blueviolet;
-        flex-grow: 1;
+     
+       
+       
+      
+        display: flow-root;
+     
 
         }
    
 }
 @media screen and (min-width:600px) {
+    body{
+        background-color: rgb(41, 3, 3);
+        
+    }
     #main-menu-container{
         display: none;
     }
 }
-

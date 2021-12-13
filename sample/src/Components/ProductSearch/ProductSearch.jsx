@@ -4,6 +4,7 @@ import CategoriesManager from './Components/CategoriesManager/CategoriesManager'
 import mobilemenu from './Asset/imgs/sort.svg';
 import closeicn from './Asset/imgs/close.svg';
 import FilterCategoryBtn from './Components/CategoriesManager/FilterCategoryBtn/FilterCategoryBtn';
+import SidebarContent from './Components/NewSidebarContent/SidebarContent';
 
 
 import {cardData} from '../ProductSearch/Asset/data/data'
@@ -12,35 +13,44 @@ import Card from './Components/Cards/Card';
 const ProductSearch = () => {
     console.log(cardData);
 
-    const[showmmenu,setshowmmenu]=useState(false)
+    const[showmmenu,setshowmmenu]=useState(false);
+    const myProduct=<section id='product-result' className='product-result'>
+             
+    {
+        cardData.map((data)=>{
+            return(
+                <div >
+                    <Card data={data}/>
+
+                </div>
+            )
+        })
+
+    }
+
+ </section> ;
+
+
+
+
 
     return (
         <main >
-          <section id='product-result' className='product-result'>
-             
-             {
-                 cardData.map((data)=>{
-                     return(
-                         <div>
-                             <Card data={data}/>
 
-                         </div>
-                     )
-                 })
+            {
+                 !showmmenu  && myProduct 
+            }
 
-             }
 
-          </section>
+
+
+
+
+          {/* */}
 
 
           <section className='sidebar'>
-              <CategoriesManager titleCastegory={'دسته بندی'}/>
-            
-              <CategoriesManager titleCastegory={' Customer Review'}/>
-              <CategoriesManager titleCastegory={'Eligible for Free Shipping '}/>
-              <CategoriesManager titleCastegory={'Connectivity '}/>
-              <CategoriesManager titleCastegory={'Condition'}/>
-              <CategoriesManager titleCastegory={'Computer Keyboard Feature '}/>
+            <SidebarContent/>
 
 
 
