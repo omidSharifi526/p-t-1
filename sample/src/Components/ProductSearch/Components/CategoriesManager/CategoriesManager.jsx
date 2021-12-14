@@ -23,8 +23,10 @@ const CategoriesManager = ({titleCastegory,data}) => {
             </div>
             <div className={`body-area  ${state?"active":"notactive"}`} >
                 
+           
             {data}
 
+           
             </div>
         </div>
     )

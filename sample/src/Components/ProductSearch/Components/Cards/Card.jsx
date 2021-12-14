@@ -1,6 +1,9 @@
     import React from 'react';
     import './card_style.scss';
-    import arrow from '../../Asset/imgs/left-arrow.svg'
+    import arrow from '../../Asset/imgs/left-arrow.svg';
+    import Startrate from '../StarRate/Startrate';
+    
+    
 
     const Card = ({data}) => {
         return (
@@ -13,7 +16,11 @@
 
 
         <div className='card-body'>
-        <span className='rate'>{data.rate}</span>
+        <div className="card-rate">
+      
+            <Startrate></Startrate>
+            <span className='rate'>{data.rate}</span>
+        </div>
                 <h6 className='card-title'>{data.title}</h6>
                 
                 <div className='price-area'>

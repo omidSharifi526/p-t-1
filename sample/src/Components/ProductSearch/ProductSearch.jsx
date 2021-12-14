@@ -5,6 +5,7 @@ import mobilemenu from './Asset/imgs/sort.svg';
 import closeicn from './Asset/imgs/close.svg';
 import FilterCategoryBtn from './Components/CategoriesManager/FilterCategoryBtn/FilterCategoryBtn';
 import SidebarContent from './Components/NewSidebarContent/SidebarContent';
+import CheckBox from './Components/Checkbox/CheckBox';
 
 
 import {cardData} from '../ProductSearch/Asset/data/data'
@@ -36,6 +37,7 @@ const ProductSearch = () => {
 
     return (
         <main >
+            
 
             {
                  !showmmenu  && myProduct 
@@ -46,11 +48,14 @@ const ProductSearch = () => {
 
 
 
-          {/* */}
+
+
+          
 
 
           <section className='sidebar'>
-            <SidebarContent/>
+              <CheckBox/>
+           
 
 
 

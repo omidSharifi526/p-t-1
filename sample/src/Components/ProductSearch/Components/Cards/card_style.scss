@@ -2,7 +2,7 @@
 
     border-left: 1px solid  rgba(255, 0, 0, 0.103);
     border-bottom: 1px solid rgba(255, 0, 0, 0.11);
-    min-height: 350px;
+    min-height: 450px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -15,26 +15,41 @@
     
 
     .card-image{
-      
+        margin-top: 50px;
+       
+        
         flex-grow: 1;
+        
     }
    
     img{
-       width: 200px;
+       width: 205px;
       
     }
 
     .card-body{
+   
+       :nth-child(2){
+           margin-top: 5px;
+       }
 
-
-        .rate{
-            color: green;
-            font-family: serif;
-            font-size: 10px;
-            &::before{
-                content: '****';
+        .card-rate{
+            width: 100%;
+           
+         
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            span{
+                font-size: 10px;
+                margin-left: 10px;
             }
+
+
         }
+
+
+        
         .card-title{
             font-weight: 400;
             font-size: 13px;
@@ -77,6 +92,8 @@
        }
        .new-price{
            font-size: 20px;
+           margin-right: 5px;
+           
        }
     
    }
@@ -131,7 +148,7 @@
 @media screen and (max-width:768px){
     #card-container{
         width: 100%;
-        background-color: rgb(231, 216, 211);
+        
         text-align: center;
        
     }

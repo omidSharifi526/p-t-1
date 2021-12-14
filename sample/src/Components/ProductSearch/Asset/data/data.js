@@ -14,16 +14,16 @@ import img10 from './imgs/10.jpg';
 
 
 export const cardData=[
-    {title:'Redragon S101 PC Gaming Keyboard',img:img1,rate:35058,price:39.99,off:4.4,newprice:34.99},
-    {title:'Redragon S101 PC Gaming Keyboard',img:img2,rate:35058,price:39.99,off:4.4,newprice:34.99},
-    {title:'Redragon S101 PC Gaming Keyboard',img:img3,rate:35058,price:39.99,off:4.4,newprice:34.99},
-    {title:'Redragon S101 PC Gaming Keyboard',img:img4,rate:35058,price:39.99,off:4.4,newprice:34.99},
-    {title:'Redragon S101 PC Gaming Keyboard',img:img5,rate:35058,price:39.99,off:4.4,newprice:34.99},
-    {title:'Redragon S101 PC Gaming Keyboard',img:img6,rate:35058,price:39.99,off:4.4,newprice:34.99},
-    {title:'Redragon S101 PC Gaming Keyboard',img:img7,rate:35058,price:39.99,off:4.4,newprice:34.99},
-    {title:'Redragon S101 PC Gaming Keyboard',img:img8,rate:35058,price:39.99,off:4.4,newprice:34.99},
-    {title:'Redragon S101 PC Gaming Keyboard',img:img9,rate:35058,price:39.99,off:4.4,newprice:34.99},
-    {title:'Redragon S101 PC Gaming Keyboard',img:img10,rate:35058,price:39.99,off:4.4,newprice:34.99},
-    {title:'Redragon S101 PC Gaming Keyboard',img:img6,rate:35058,price:39.99,off:4.4,newprice:34.99},
-    {title:'Redragon S101 PC Gaming Keyboard',img:img7,rate:35058,price:39.99,off:4.4,newprice:34.99}
+    {title:'Redragon S101 PC Gaming Keyboard',img:img1,rate:35,price:39.99,off:44000,newprice:34.99},
+    {title:'Redragon S101 PC Gaming Keyboard',img:img2,rate:3,price:39.99,off:44000,newprice:34.99},
+    {title:'Redragon S101 PC Gaming Keyboard',img:img3,rate:358,price:39.99,off:44000,newprice:34.99},
+    {title:'Redragon S101 PC Gaming Keyboard',img:img4,rate:44,price:39.99,off:44000,newprice:34.99},
+    {title:'Redragon S101 PC Gaming Keyboard',img:img5,rate:358,price:39.99,off:44000,newprice:34.99},
+    {title:'Redragon S101 PC Gaming Keyboard',img:img6,rate:3150,price:39.99,off:44000,newprice:34.99},
+    {title:'Redragon S101 PC Gaming Keyboard',img:img7,rate:358,price:39.99,off:44000,newprice:34.99},
+    {title:'Redragon S101 PC Gaming Keyboard',img:img8,rate:458,price:39.99,off:44000,newprice:34.99},
+    {title:'Redragon S101 PC Gaming Keyboard',img:img9,rate:741,price:39.99,off:44000,newprice:34.99},
+    {title:'Redragon S101 PC Gaming Keyboard',img:img10,rate:896,price:39.99,off:44000,newprice:34.99},
+    {title:'Redragon S101 PC Gaming Keyboard',img:img6,rate:147,price:39.99,off:44000,newprice:34.99},
+    {title:'Redragon S101 PC Gaming Keyboard',img:img7,rate:456,price:39.99,off:44000,newprice:34.99}
 ]
