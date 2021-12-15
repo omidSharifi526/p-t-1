@@ -184,6 +184,8 @@ main{
 }
 
 @media screen and (max-width:600px) {
+
+   
     section.sidebar{
         display: none;
     }   
@@ -192,22 +194,18 @@ main{
      position: fixed;
     }
     #product-result{
-     
-       
-       
-      
         display: flow-root;
-     
-
         }
+        #main-menu-container{
+         
+            width: 100%;
+        }
+       
    
 }
 @media screen and (min-width:600px) {
-    body{
-        background-color: rgb(41, 3, 3);
-        
-    }
-    #main-menu-container{
-        display: none;
-    }
+    
+    // #main-menu-container{
+    //     display: none;
+    // }
 }

@@ -13,7 +13,7 @@ const CategoriesManager = ({titleCastegory,data}) => {
 
     return (
         <div className={`categori-main-container`}>
-            <div className="header-area">
+            <div onClick={()=>{setstate(!state)}} className="header-area">
                 <span>{titleCastegory}</span>
                 <img onClick={()=>{
                     setstate(!state)

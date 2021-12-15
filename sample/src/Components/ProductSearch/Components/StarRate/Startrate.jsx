@@ -10,10 +10,10 @@ const Startrate = () => {
         <div>
           {
               [...Array(5)].map((star,index)=>{
-                  console.log(index+'index');
+                  //console.log(index+'index');
                   const ratingValue=index+1;
-                  console.log(ratingValue+'ratingvalue');
-                  return(<label>
+                // console.log(ratingValue+'ratingvalue');
+                  return(<label key={index}>
                       <input 
                       type="radio" 
                       name="rating " 

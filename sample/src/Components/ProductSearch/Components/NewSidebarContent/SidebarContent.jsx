@@ -1,58 +1,70 @@
-import React from 'react';
+import React,{useState} from 'react';
 import './sidebarcontent_style.scss';
 import CategoriesManager from '../CategoriesManager/CategoriesManager';
-import searchimg from '.././../Asset/imgs/search-icn.svg'
+import searchimg from '.././../Asset/imgs/search-icn.svg';
+import CheckBox from '../Checkbox/CheckBox';
 
 const SidebarContent = () => {
-    const maincategory=
-    <div id='test1' className='test1'>
-        <ul >
-    <li>
-    PC Accessories
-    <ul>
-    <li>
-    PC Game Mice
-    </li>
-    <li>
-    PC Game Headsets
-    </li>
-    <li>
-    Mac Games & Accessories
-    </li>
-    <li>
 
+    const[accept,setAccept]=useState(true);
+   // console.log(accept);
+
+    const handleCheckbox=(checked)=>{
+        console.log('from child',checked);
+        setAccept(checked)
+
+       
+      
+
+    }
+
+
+
+    const maincategory=<div className='test1'>
+        <ul>
+    <li>PC Accessories
+       <ul>
+          <li>PC Gaming Mice</li>
+          <li>PC Game Headsets</li>
+       </ul>
     </li>
-    </ul>
+
+
+    <li>Mac Games & Accessories
+        <ul><li>Mac Accessories</li></ul>
     </li>
-    {/* first li */}
 
     <li>Mac Accessories</li>
-    <li><ul><li>Computers & Accessories</li><li>PlayStation Legacy Systems</li><li>Earbud & In-Ear Headphones</li></ul></li>
-    </ul>
-    </div>
-    ;
+    <li>PlayStation Legacy Systems</li>
+    <li>Earbud & In-Ear Headphones</li>
+
+
+
+  </ul>
+  
+    </div>;
+  
+    
+
+
+
+        
+ 
+    
 
 
 
     const row2=<div className='row2'>
-        <span><input type="checkbox" name="" id="" />     4 Stars & Up & Up</span>
-        <span> <input type="checkbox" name="" id="" /> 3 Stars & Up & Up</span>
-        <span> <input type="checkbox" name="" id="" /> 2 Stars & Up & Up</span>
-        <li> <input type="checkbox" name="" id="" /> 1 Stars & Up & Up</li>
-
-
-
-
-        {/* <ul>
-    <li> <input type="checkbox" name="" id="" />    4 Stars & Up & Up</li>
-    <li> <input type="checkbox" name="" id="" /> 3 Stars & Up & Up</li>
-    <li> <input type="checkbox" name="" id="" /> 2 Stars & Up & Up</li>
-    <li> <input type="checkbox" name="" id="" /> 1 Star & Up & Up</li>
-    </ul> */}
+        <CheckBox label='4 Stars & Up & Up' styleClass='' checked={accept} handleCheckbox={handleCheckbox} />
+        <CheckBox label=' 3 Stars & Up & Up' styleClass='' checked={accept} handleCheckbox={handleCheckbox} />
+        <CheckBox label=' 2 Stars & Up & Up' styleClass='' checked={accept} handleCheckbox={handleCheckbox} />
+        <CheckBox label='1 Stars & Up & Up' styleClass='' checked={accept} handleCheckbox={handleCheckbox} />
+      
     </div>;
 
     const row3=<div className='row3'>
-        <span><input type="checkbox" name="" id="" />Free Shipping by Amazon All customers get FREE Shipping on orders over $25 shipped by Amazo</span>
+         <CheckBox label=' Free Shipping by Amazon All customers get FREE Shipping on orders over $25 shipped by Amazo' styleClass='myCheckBox' checked={accept} handleCheckbox={handleCheckbox} />
+       
     </div>;
 
     
@@ -65,43 +77,46 @@ const SidebarContent = () => {
 
 const row4=<div className='row4'>
    <div className='text-area'><img src={searchimg} alt="" /> <input type="text" name="" id="" placeholder='جست و جو' /></div>
-   <span> <input type="checkbox" name="" id="" />Razer </span>
-   <span> <input type="checkbox" name="" id="" />Logitech </span>
-   
+   <CheckBox label=' Razer' styleClass='myCheckBox' checked={accept} handleCheckbox={handleCheckbox} />
+   <CheckBox label=' Logitech' styleClass='myCheckBox' checked={accept} handleCheckbox={handleCheckbox} />
+
 </div>
 
 
 const row5=<div className='row5' >
-<span> <input type="checkbox" name="" id="" />   Last 30 days</span>
-<span> <input type="checkbox" name="" id="" /> Last 90 days</span>
+ <CheckBox label=' Last 30 days' styleClass='myCheckBox' checked={accept} handleCheckbox={handleCheckbox} />
+ <CheckBox label=' Last 90 days' styleClass='myCheckBox' checked={accept} handleCheckbox={handleCheckbox} />
+
 
 </div>;
 
 
 
 const row6=<div className='row6'>
- <span><input type="checkbox" name="" id="" />   Amazon Global Store</span>
+  <CheckBox label='Amazon Global Store' styleClass='myCheckBox' checked={accept} handleCheckbox={handleCheckbox} />
+ 
 </div>;
 
 
 
 
 const row7=<div className='row7'>
-<span> <input type="checkbox" name="" id="" />   International Shipping Eligible</span>
+<CheckBox label='International Shipping Eligible' styleClass='myCheckBox' checked={accept} handleCheckbox={handleCheckbox} />
+
 
 
 </div>;
 
 const row8=<div className='row8'>
-<span> <input type="checkbox" name="" id="" />   New</span>
-<span> <input type="checkbox" name="" id="" />  Used</span>
 
+<CheckBox label='New' styleClass='myCheckBox' checked={accept} handleCheckbox={handleCheckbox} />
+<CheckBox label='Used' styleClass='myCheckBox' checked={accept} handleCheckbox={handleCheckbox} />
 
 </div>;
 
 const row9=<div className='row9'>
-<span> <input type="checkbox" name="" id="" />   Include Out of Stock</span>
 
+<CheckBox label='Include Out of Stock' styleClass='myCheckBox' checked={accept} handleCheckbox={handleCheckbox} />
 
 
 </div>;
