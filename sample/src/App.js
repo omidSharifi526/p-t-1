@@ -9,7 +9,8 @@ import './App.scss';
 // import MostPopular from './Components/BeCarpenter/Components/MostPopularProducts/MostPopular';
 // import ExcitingDiscount from './Components/ExcitingDiscount/ExcitingDiscount';
 
-import ProductSearch from './Components/ProductSearch/ProductSearch';
+// import ProductSearch from './Components/ProductSearch/ProductSearch';
+ import BusinessLanding from './Components/Business Landing/BusinessLanding';
 
 
 
@@ -35,7 +36,8 @@ const App = () => {
       
       {/* <BeCarpenter setMenuActive={setMenuActive}/>
       <MostPopular/> */}
-      <ProductSearch/>
+      {/* <ProductSearch/> */}
+      <BusinessLanding/>
 
       
       
