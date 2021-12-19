@@ -16,7 +16,9 @@ const Card = ({pdata}) => {
                 <img src={pdata.img} alt="" />
                 </div>
                 <div className='text-det'>
-                   
+                <span className='person-name'>
+                    {pdata.name}
+                </span>
                     <span className='person-job'>{pdata.job}</span>
                 </div>
                 {/* <span className='person-name'>{pdata.name}</span> */}

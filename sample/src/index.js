@@ -5,7 +5,8 @@ import App from './App';
 
 
 // Import Swiper styles
-
+// import "swiper/css/bundle";
+// import "./styles.css";
 
 
 ReactDOM.render(

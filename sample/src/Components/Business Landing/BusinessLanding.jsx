@@ -20,16 +20,19 @@ import 'swiper/modules/pagination/pagination.scss'; // Pagination module
 
 
 
-import SwiperCore,{ EffectCreative } from 'swiper';
+
+
+import SwiperCore,{Autoplay,EffectCreative,Pagination, } from 'swiper';
 
 
 
 
 
 
-SwiperCore.use([EffectCreative]);
+SwiperCore.use([Autoplay,EffectCreative,Pagination]);
 
 const BusinessLanding = () => {
+    
     console.log(EffectCreative);
     return (
         <div className='main-container'>
@@ -52,26 +55,41 @@ const BusinessLanding = () => {
 
 
 
-            <Swiper pagination
-            grabCursor={true} effect={'creative'} EffectCreative={{"prev": {"shadow": true,"translate": [0,0,-500]},"next": {"translate": ["120%",0,-500]}}} className="mySwiper">
+            {/* <Swiper Autoplay pagination={{"dynamicBullets": true}} slidesPerView={window.innerWidth<600?1:2} spaceBetween={0} 
+            grabCursor={true} effect={'creative'} effect={'fade'} EffectCreative={{"prev": {"shadow": true,"translate": [0,0,-400]},"next": {"translate": ["100%",0,0]}}} className="mySwiper">
 
     {
         personData.map((pdata)=>{
             return(<div>
-                <SwiperSlide><Card pdata={pdata}/></SwiperSlide>
+                <SwiperSlide>
+
+                    <Card pdata={pdata}/>
+
+                </SwiperSlide>
             </div>)
         })
     }
 
-{/* <SwiperSlide>slide3</SwiperSlide><SwiperSlide>slide5</SwiperSlide> */}
 
 
 
-    </Swiper>
+
+    </Swiper> */}
    
  
+   <div className="carusel">
+   <div className="slide">
+
+   </div>
+   <div className="slide">
+
+   </div>
+   <div className="slide">
+
+   </div>
+   </div>
    
-  
+   
    
 
 
